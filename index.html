@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Department of English | Student Tracking</title>
+        <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+        <link rel="stylesheet" href="animate.css">
+        <link href="https://fonts.googleapis.com/css?family=Cormorant|Roboto:100" rel="stylesheet">
+       <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+    <div id="container">
+            <header>
+                <img src="olemiss.png" class="logo">
+                <h1 class="englogo">Department of English</h1>
+                <div class="nav">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="submit.html">Submit</a></li>
+                        <li><a href="query.asp">Query</a></li>
+                    </ul>
+                </div>
+                    <form id="newUserForm">
+                        <h3>Complete the following form to add your student information
+                            to the database.
+                        </h3>
+                        <label for="Field1">First Name:</label><br>
+                        <input id="userfName" name="Field1" type="text" value=""><br><br>
+                        <label for="Field2">Last Name:</label><br>
+                        <input id="userlName" name="Field2" type="text" value=""><br><br>
+                        <fieldset>
+                                <legend>Program</legend>
+                                <ul>
+                                    <li>
+                                      <label for="title_1">
+                                        <input type="radio" id="undergraduate" name="title" value="Undergraduate" >
+                                        Undergraduate
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <label for="title_2">
+                                        <input type="radio" id="graduate" name="title" value="Graduate">
+                                        Graduate
+                                      </label>
+                                    </li>
+                                </ul>
+                        </fieldset><br>
+                        <label for="Field3">Graduate Year (XXXX):</label><br>
+                        <input id="gradDate" name="Field3" type="text" value=""><br><br>
+
+                        <input id="saveForm" name="saveForm" type="submit" value="Submit Form">
+                    </form>
+            </header>
+        </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <script src="authentication.js"></script>
+    </body>
+</html>
